@@ -1,5 +1,7 @@
 #include "func.h"
 #include <thread>
+#include <iostream>
+
 
 using namespace std;
 
@@ -25,5 +27,7 @@ thread t9(helloFunc);
 t9.join();
 thread t10(helloFunc);
 t10.join();
+cout << "Press enter to continue ...";
+cin.get(); 
 return 0;
 }
